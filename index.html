@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- ========== SEO ========== -->
+  <title>Vibrans Gourmet | Pasabocas Gourmet &amp; Catering</title>
+  <meta name="description" content="Pasabocas gourmet y catering exclusivo para eventos. Creamos experiencias gastronómicas personalizadas para momentos especiales.">
+  <meta name="theme-color" content="#2A0710">
+  <!-- Al publicar: reemplazar por la URL real del sitio -->
+  <!-- <link rel="canonical" href="https://www.tudominio.com/"> -->
+
+  <!-- Open Graph / redes -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Vibrans Gourmet">
+  <meta property="og:title" content="Vibrans Gourmet | Pasabocas Gourmet &amp; Catering">
+  <meta property="og:description" content="Pasabocas gourmet y catering exclusivo para eventos. Creamos experiencias gastronómicas personalizadas para momentos especiales.">
+  <meta property="og:image" content="assets/og-image.jpg"><!-- usar URL absoluta al publicar -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <!-- Tipografías: Cormorant Garamond (titulares) + Jost (texto). Con fallback si no hay conexión. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Vibrans Gourmet",
+    "description": "Pasabocas gourmet y catering exclusivo para eventos.",
+    "image": "assets/og-image.jpg",
+    "servesCuisine": "Gourmet",
+    "areaServed": "Colombia"
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#nosotros">Saltar al contenido</a>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a class="brand" href="#inicio" aria-label="Vibrans Gourmet — inicio">
+        <img class="brand-leaf" src="assets/logo-leaf.png" alt="" width="65" height="123">
+        <span class="brand-text">
+          <img class="brand-word" src="assets/logo-wordmark.png" alt="Vibrans" width="474" height="80">
+          <img class="brand-sub" src="assets/logo-gourmet.png" alt="Gourmet" width="337" height="42">
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#propuesta">Propuesta</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn btn-primary btn-sm" data-mode="evento" href="#contacto">Cotizar evento</a>
+        </div>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ========== 1. HERO ========== -->
+    <section class="hero" id="inicio" aria-labelledby="heroTitle">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/patacon.webp" alt="" width="896" height="1171" fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="gold-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="logo-stage hero-logo">
+            <img class="logo-base" src="assets/logo-gold.png" alt="Vibrans Gourmet" width="486" height="315" fetchpriority="high">
+            <img class="logo-shine" src="assets/logo-gold-bright.png" alt="" aria-hidden="true" width="486" height="315">
+          </div>
+          <h1 id="heroTitle" class="reveal" style="--d:.12s">
+            <span class="sr-only">Vibrans Gourmet. </span>Pasabocas gourmet &amp; catering para <em>momentos especiales.</em>
+          </h1>
+          <p class="hero-lead reveal" style="--d:.24s">
+            Diseñamos experiencias gastronómicas a la medida de tu evento: sabores cuidadosamente elaborados, presentaciones impecables y atención personalizada de principio a fin.
+          </p>
+          <div class="hero-actions reveal" style="--d:.36s">
+            <a class="btn btn-primary" href="#propuesta">Ver nuestra propuesta</a>
+            <a class="btn btn-ghost" data-mode="evento" href="#contacto">Solicitar cotización</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:.2s" aria-hidden="false">
+          <svg class="arch-frame" viewBox="0 0 440 550" aria-hidden="true" focusable="false">
+            <path class="draw" pathLength="1" d="M1 549V220A219 219 0 0 1 439 220V549Z"/>
+            <path class="run" pathLength="1" d="M1 549V220A219 219 0 0 1 439 220V549Z"/>
+          </svg>
+          <div class="arch">
+            <img data-parallax="0.06" src="assets/patacon.webp" alt="Patacón relleno de carne desmechada con crema de cilantro, servido sobre tabla de bambú" width="896" height="1171" fetchpriority="high">
+          </div>
+          <div class="orb">
+            <img src="assets/tostada.webp" alt="Tostada de pan artesanal con jamón serrano, rúcula y tomates cherry glaseados" width="896" height="1150">
+          </div>
+          <span class="hero-tag">Hecho a mano, para tu evento</span>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#nosotros" aria-label="Bajar a la siguiente sección"><span></span></a>
+    </section>
+
+    <!-- ========== DOS CAMINOS: pedir pasabocas / cotizar evento ========== -->
+    <section class="section section-ivory paths" id="empieza" aria-labelledby="pathsTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Elige cómo empezar</p>
+          <h2 class="display" id="pathsTitle">Catering para eventos, <em>a tu manera</em></h2>
+          <p class="lead reveal" style="--d:.16s">Propuestas gastronómicas personalizadas para bodas, eventos corporativos, cumpleaños, celebraciones y otros eventos.</p>
+        </div>
+
+        <div class="paths-grid">
+          <article class="path line-frame reveal">
+            <span class="path-n">01</span>
+            <h3>Quiero pedir pasabocas</h3>
+            <p>Explora el catálogo, elige tus favoritos y envíanos tu selección. Nosotros te respondemos con una propuesta.</p>
+            <ol class="path-steps">
+              <li><span>1</span>Catálogo</li>
+              <li><span>2</span>Tu selección</li>
+              <li><span>3</span>WhatsApp</li>
+            </ol>
+            <a class="btn btn-wine" href="#productos">Ver el catálogo</a>
+          </article>
+
+          <article class="path path-dark line-frame reveal" style="--d:.12s">
+            <span class="path-n">02</span>
+            <h3>Quiero cotizar mi evento</h3>
+            <p>Cuéntanos el tipo de evento, el número de invitados y la fecha, y diseñamos una propuesta a la medida.</p>
+            <ol class="path-steps">
+              <li><span>1</span>Formulario</li>
+              <li><span>2</span>Evento e invitados</li>
+              <li><span>3</span>WhatsApp</li>
+            </ol>
+            <a class="btn btn-primary" data-mode="evento" href="#contacto">Cotizar mi evento</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 2. NOSOTROS ========== -->
+    <section class="section section-cream" id="nosotros" aria-labelledby="aboutTitle">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow reveal">Sobre Vibrans Gourmet</p>
+          <h2 class="display reveal" id="aboutTitle" style="--d:.08s">Cada evento merece una <em>historia</em> que se saborea.</h2>
+          <p class="reveal" style="--d:.16s">
+            En Vibrans Gourmet transformamos cada evento en una experiencia gastronómica especial, creando pasabocas y propuestas de catering pensadas para sorprender.
+          </p>
+          <p class="reveal" style="--d:.22s">
+            No trabajamos con menús cerrados. Escuchamos qué celebras, con quién y cómo quieres sentirlo, y adaptamos cada propuesta al tipo de evento, al estilo de tus invitados y a lo que tienes en mente.
+          </p>
+
+          <ul class="pillars">
+            <li class="reveal" style="--d:.1s">
+              <span class="pillar-n">01</span>
+              <div><h3>Propuesta a tu medida</h3><p>Cada menú se diseña según tu evento y tus invitados.</p></div>
+            </li>
+            <li class="reveal" style="--d:.18s">
+              <span class="pillar-n">02</span>
+              <div><h3>Calidad que se nota</h3><p>Ingredientes seleccionados y elaboración cuidadosa en cada bocado.</p></div>
+            </li>
+            <li class="reveal" style="--d:.26s">
+              <span class="pillar-n">03</span>
+              <div><h3>Presentación impecable</h3><p>Un montaje elegante que acompaña toda la experiencia.</p></div>
+            </li>
+          </ul>
+
+          <a class="link-arrow reveal" href="#propuesta">Conocer nuestra propuesta <span aria-hidden="true">→</span></a>
+        </div>
+
+        <figure class="about-visual reveal" style="--d:.15s">
+          <svg class="arch-frame" viewBox="0 0 440 550" aria-hidden="true" focusable="false">
+            <path class="draw" pathLength="1" d="M1 549V220A219 219 0 0 1 439 220V549Z"/>
+            <path class="run" pathLength="1" d="M1 549V220A219 219 0 0 1 439 220V549Z"/>
+          </svg>
+          <div class="arch arch-gold">
+            <img data-parallax="0.04" src="assets/logo-original.webp" alt="Logotipo de Vibrans Gourmet en dorado sobre fondo borgoña" width="928" height="1152" loading="lazy">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== 3. NUESTRA PROPUESTA ========== -->
+    <section class="section section-ivory" id="propuesta" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Nuestra propuesta</p>
+          <h2 class="display reveal" id="servicesTitle" style="--d:.08s">Una experiencia gastronómica <em>para cada ocasión</em></h2>
+          <p class="lead reveal" style="--d:.16s">Seis formas de acompañar tu evento, todas creadas a la medida.</p>
+        </div>
+        <div class="services-grid" id="servicesGrid"><!-- se genera desde script.js (SERVICES) --></div>
+      </div>
+    </section>
+
+    <!-- ========== 4. EXPERIENCIA GOURMET ========== -->
+    <section class="section section-wine" id="experiencia" aria-labelledby="expTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Experiencia gourmet</p>
+          <h2 class="display reveal" id="expTitle" style="--d:.08s">Sabores que se <em>miran</em> antes de probarse</h2>
+          <p class="lead reveal" style="--d:.16s">Pasabocas, canapés, mini postres y tablas pensados para lucir tan bien como saben.</p>
+        </div>
+        <div class="exp-grid" id="expGrid"><!-- se genera desde script.js (EXPERIENCE) --></div>
+        <div class="center-cta reveal">
+          <a class="btn btn-ghost" href="#productos">Conocer nuestros productos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. PRODUCTOS ========== -->
+    <section class="section section-cream" id="productos" aria-labelledby="productsTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Nuestros productos</p>
+          <h2 class="display reveal" id="productsTitle" style="--d:.08s">Una carta para <em>elegir</em> y combinar</h2>
+          <p class="lead reveal" style="--d:.16s">Elige lo que te antoja y agrégalo a tu pedido. Trabajamos con cotización personalizada: te enviamos una propuesta a la medida.</p>
+        </div>
+        <div class="chips reveal" id="productFilters" role="tablist" aria-label="Filtrar productos por categoría"><!-- script.js --></div>
+        <div class="products-grid" id="productsGrid"><!-- se genera desde script.js (PRODUCTS) --></div>
+      </div>
+    </section>
+
+    <!-- ========== 6. EVENTOS ========== -->
+    <section class="section section-wine section-events" id="eventos" aria-labelledby="eventsTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Eventos</p>
+          <h2 class="display reveal" id="eventsTitle" style="--d:.08s">Momentos que merecen <em>algo especial</em></h2>
+          <p class="lead reveal" style="--d:.16s">Sin importar el tamaño o el estilo, cada celebración tiene su propia mesa.</p>
+        </div>
+        <div class="events-grid" id="eventsGrid"><!-- se genera desde script.js (EVENTS) --></div>
+      </div>
+    </section>
+
+    <!-- ========== 7. COTIZA TU EVENTO / PIDE TUS PASABOCAS ========== -->
+    <section class="section section-cream section-quote" id="contacto" aria-labelledby="quoteTitle">
+      <div class="container quote-grid line-frame-static">
+        <aside class="quote-side reveal">
+          <p class="eyebrow eyebrow-light">Solicitar cotización</p>
+          <h2 class="display" id="quoteTitle">Cuéntanos qué necesitas y <em>diseñamos</em> tu propuesta</h2>
+          <ol class="steps">
+            <li><span>1</span><div><h3>Comparte los detalles</h3><p>Tu evento o los pasabocas que elegiste, con fecha e invitados.</p></div></li>
+            <li><span>2</span><div><h3>Se abre WhatsApp</h3><p>Con tu solicitud ya redactada: tú solo confirmas el envío.</p></div></li>
+            <li><span>3</span><div><h3>Recibe tu propuesta</h3><p>Te respondemos personalmente y ajustamos todo contigo, sin compromiso.</p></div></li>
+          </ol>
+          <a class="quote-direct" data-wa="quote" href="#contacto">
+            <svg class="i-wa" aria-hidden="true"><use href="#ico-wa"/></svg>
+            ¿Prefieres escribir directo? Abrir WhatsApp
+          </a>
+        </aside>
+
+        <div class="quote-form-wrap reveal" style="--d:.12s">
+          <div class="mode-tabs" role="tablist" aria-label="Tipo de solicitud">
+            <button type="button" class="mode-tab is-active" role="tab" aria-selected="true" data-mode="evento" data-tab>Cotizar mi evento</button>
+            <button type="button" class="mode-tab" role="tab" aria-selected="false" data-mode="pasabocas" data-tab>Pedir pasabocas <span class="count" id="selCount" hidden>0</span></button>
+          </div>
+
+          <form id="quoteForm" class="quote-form" data-mode="evento" novalidate>
+            <div class="field">
+              <label for="f-nombre">Nombre</label>
+              <input id="f-nombre" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre completo">
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-whatsapp">WhatsApp</label>
+              <input id="f-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required placeholder="+57 300 000 0000">
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-correo">Correo</label>
+              <input id="f-correo" name="correo" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com">
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field only-evento">
+              <label for="f-evento">Tipo de evento</label>
+              <select id="f-evento" name="evento"></select>
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-fecha"><span class="only-evento">Fecha del evento</span><span class="only-pasabocas">¿Para cuándo lo necesitas?</span></label>
+              <input id="f-fecha" name="fecha" type="date">
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-invitados"><span class="only-evento">Número aproximado de invitados</span><span class="only-pasabocas">Personas aproximadas (opcional)</span></label>
+              <input id="f-invitados" name="invitados" type="number" min="1" inputmode="numeric" placeholder="Ej. 80">
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-ciudad">Ciudad</label>
+              <input id="f-ciudad" name="ciudad" type="text" autocomplete="address-level2" placeholder="¿Dónde será el evento?">
+              <span class="err" aria-live="polite"></span>
+            </div>
+            <div class="field only-evento">
+              <label for="f-servicio">Tipo de servicio</label>
+              <select id="f-servicio" name="servicio"></select>
+              <span class="err" aria-live="polite"></span>
+            </div>
+
+            <!-- Solo en modo "Pedir pasabocas": productos elegidos en el catálogo -->
+            <div class="field-full selection only-pasabocas" id="selection" aria-live="polite">
+              <p class="selection-title">Tu selección</p>
+              <ul class="sel-list" id="selList"></ul>
+              <p class="sel-empty" id="selEmpty">Aún no has elegido productos.</p>
+              <a class="link-arrow" href="#productos" id="selMore">Explorar el catálogo <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="field field-full">
+              <label for="f-mensaje">Mensaje / detalles adicionales</label>
+              <textarea id="f-mensaje" name="mensaje" rows="4" placeholder="Cuéntanos el estilo, restricciones alimentarias, horarios o cualquier idea que tengas."></textarea>
+            </div>
+            <div class="field-full form-foot">
+              <button class="btn btn-wine btn-lg" type="submit">
+                <svg class="i-wa" aria-hidden="true"><use href="#ico-wa"/></svg>
+                <span id="submitLabel">Solicitar cotización</span>
+              </button>
+              <p class="form-note">Al enviar se abrirá WhatsApp con tu solicitud ya redactada. No se envía nada hasta que tú lo confirmes.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 9. GALERÍA / INSTAGRAM ========== -->
+    <section class="section section-ivory" id="galeria" aria-labelledby="galleryTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Galería</p>
+          <h2 class="display reveal" id="galleryTitle" style="--d:.08s">Un vistazo a nuestra <em>mesa</em></h2>
+          <p class="lead reveal" style="--d:.16s">Productos, montajes y eventos reales. Mucho más en nuestro Instagram.</p>
+        </div>
+        <div class="ig-grid" id="igGrid"><!-- se genera desde script.js (GALLERY) --></div>
+        <div class="center-cta reveal">
+          <a class="btn btn-wine" data-ig href="#" target="_blank" rel="noopener">
+            <svg class="i-ig" aria-hidden="true"><use href="#ico-ig"/></svg>
+            Síguenos en Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 10. TESTIMONIOS ========== -->
+    <!-- TESTIMONIOS DE EJEMPLO: reemplazar por reseñas reales de clientes. -->
+    <section class="section section-cream" id="testimonios" aria-labelledby="testiTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Testimonios</p>
+          <h2 class="display reveal" id="testiTitle" style="--d:.08s">Lo que dicen quienes ya <em>celebraron</em> con nosotros</h2>
+        </div>
+        <div class="testi-grid">
+          <figure class="testi reveal">
+            <svg class="quote-mark" aria-hidden="true"><use href="#ico-quote"/></svg>
+            <blockquote>Cada bocado fue una sorpresa. Nuestros invitados no dejaron de preguntar quién había preparado todo. La presentación estuvo a la altura de la boda.</blockquote>
+            <figcaption><strong>María Fernanda R.</strong><span>Boda</span></figcaption>
+          </figure>
+          <figure class="testi reveal" style="--d:.1s">
+            <svg class="quote-mark" aria-hidden="true"><use href="#ico-quote"/></svg>
+            <blockquote>Cumplieron con tiempos, montaje y sabor. Nuestro evento empresarial se vio profesional y elegante, y la atención fue cercana desde la primera conversación.</blockquote>
+            <figcaption><strong>Andrés Felipe G.</strong><span>Evento empresarial</span></figcaption>
+          </figure>
+          <figure class="testi reveal" style="--d:.2s">
+            <svg class="quote-mark" aria-hidden="true"><use href="#ico-quote"/></svg>
+            <blockquote>Me ayudaron a elegir el menú sin complicaciones y todo llegó impecable. Fue el detalle que hizo especial mi celebración.</blockquote>
+            <figcaption><strong>Laura C.</strong><span>Cumpleaños</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 11. CTA FINAL ========== -->
+    <section class="cta-final" aria-labelledby="ctaTitle">
+      <div class="cta-bg" aria-hidden="true"><img src="assets/tostada.webp" alt="" width="896" height="1150" loading="lazy"></div>
+      <div class="cta-overlay" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <div class="logo-stage cta-logo">
+          <img class="logo-base" src="assets/logo-gold.png" alt="Vibrans Gourmet" width="486" height="315" loading="lazy">
+          <img class="logo-shine" src="assets/logo-gold-bright.png" alt="" aria-hidden="true" width="486" height="315" loading="lazy">
+        </div>
+        <h2 class="display" id="ctaTitle">Tu evento merece una <em>experiencia diferente.</em></h2>
+        <p class="reveal" style="--d:.16s">Cuéntanos qué tienes en mente y creemos juntos una propuesta gastronómica para tu evento.</p>
+        <div class="hero-actions reveal" style="--d:.24s">
+          <a class="btn btn-primary btn-lg" data-mode="evento" href="#contacto">Solicitar cotización</a>
+          <a class="btn btn-ghost btn-lg" href="#productos">Pedir pasabocas</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== 12. FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo-stage footer-logo">
+          <img class="logo-base" src="assets/logo-gold.png" alt="Vibrans Gourmet" width="486" height="315" loading="lazy">
+          <img class="logo-shine" src="assets/logo-gold-bright.png" alt="" aria-hidden="true" width="486" height="315" loading="lazy">
+        </div>
+        <p>Pasabocas gourmet &amp; catering</p>
+      </div>
+      <div class="footer-col">
+        <h3>Explora</h3>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#propuesta">Propuesta</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <ul>
+          <li><a data-wa="footer" data-text-phone href="#contacto">WhatsApp</a></li>
+          <li><a data-ig data-text-ig href="#" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a data-mail data-text-mail href="#">Correo</a></li>
+          <li><span data-text-city>Colombia</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="footer-phrase">Creando experiencias que se disfrutan.</p>
+      <!-- Marca de agua del desarrollador (enlace configurable: SONETIX_URL en script.js) -->
+      <a class="copy sonetix" data-sonetix>
+        <i aria-hidden="true"><b></b><b></b><b></b><b></b></i>
+        <span>© <span id="year">2026</span> <strong>Sonetix</strong>. Páginas web a la medida.</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLOTANTE ========== -->
+  <div class="wa-widget" id="waWidget">
+    <!-- Mini mensajes de ejemplo que van apareciendo (texto en script.js → WA_TEASERS) -->
+    <div class="wa-teaser" id="waTeaser" aria-hidden="true">
+      <span class="wa-teaser-label">Puedes escribirnos algo así:</span>
+      <p id="waTeaserText"></p>
+    </div>
+
+    <div class="wa-panel" id="waPanel" role="dialog" aria-label="Escríbenos por WhatsApp">
+      <div class="wa-panel-head">
+        <img src="assets/logo-leaf.png" alt="" width="65" height="123">
+        <div><strong>Vibrans Gourmet</strong><span>Te atendemos personalmente</span></div>
+        <button type="button" class="wa-panel-close" id="waClose" aria-label="Cerrar">×</button>
+      </div>
+      <div class="wa-panel-body">
+        <p>Elige un mensaje y se abrirá WhatsApp con el texto listo para enviar:</p>
+        <div class="wa-chips" id="waChips"></div>
+        <a class="wa-panel-link" data-mode="evento" href="#contacto">Prefiero llenar el formulario de cotización <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <button type="button" class="wa-float-btn" id="waBtn" aria-expanded="false" aria-controls="waPanel" aria-label="Abrir ayuda de WhatsApp">
+      <svg class="i-wa" aria-hidden="true"><use href="#ico-wa"/></svg>
+    </button>
+  </div>
+
+  <!-- Barra "mi selección" del catálogo -->
+  <div class="sel-bar" id="selBar" aria-live="polite">
+    <span class="sel-bar-text" id="selBarText">0 productos</span>
+    <a class="btn btn-primary btn-sm" data-mode="pasabocas" href="#contacto">Continuar con mi pedido</a>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ========== ICONOS (sprite) ========== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="ico-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41z"/></symbol>
+    <symbol id="ico-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/></g><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="ico-quote" viewBox="0 0 48 36"><path fill="currentColor" d="M0 36V20C0 8 6 1.5 18 0v7c-5 1-8 4.5-8 9h8v20H0zm27 0V20C27 8 33 1.5 45 0v7c-5 1-8 4.5-8 9h8v20H27z"/></symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
