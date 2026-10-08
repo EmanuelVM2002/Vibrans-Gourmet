@@ -172,7 +172,7 @@ html.js .site-header:not(.show-brand):not(.nav-open) .brand { opacity: 0; pointe
 .nav-open .burger span:nth-child(1) { top: 22px; transform: rotate(45deg); }
 .nav-open .burger span:nth-child(2) { top: 22px; transform: rotate(-45deg); }
 
-@media (max-width: 1200px) {
+@media (max-width: 1320px) {
   :root { --header-h: 72px; }
   .burger { display: block; }
   .nav-links {
@@ -859,3 +859,123 @@ a.sonetix[href]:hover i b:nth-child(4) { animation-delay: .45s; }
 .copy.sonetix { padding: 0; font-size: .82rem; letter-spacing: .02em; text-transform: none; color: rgba(245, 238, 227, .6); }
 .copy.sonetix strong { letter-spacing: .04em; color: rgba(245, 238, 227, .85); }
 a.copy.sonetix[href]:hover strong { color: var(--gold-light); }
+
+
+/* =====================================================================
+   14. ALQUILER (torres y bandejas) + SIMULADOR DE MESA
+   ===================================================================== */
+.stands-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.2rem, 2.4vw, 2rem); }
+.stand .card-media { aspect-ratio: 1 / .92; }
+.stand .card-body .stand-meta { flex: 0; font-size: .74rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-deep); }
+.stand-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; margin-top: .5rem; }
+
+.rental-terms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; max-width: 1000px; margin: clamp(2.5rem, 6vw, 4.5rem) auto 0; }
+.rental-terms li { position: relative; padding-top: 1.4rem; border-top: 1px solid rgba(74, 14, 28, .16); }
+.rental-terms li::before { content: ''; position: absolute; top: -1px; left: 0; width: 44px; height: 2px; background: var(--gold); }
+.rt-n { font-family: var(--font-display); font-style: italic; font-size: 1.3rem; color: var(--gold-deep); font-variant-numeric: lining-nums; font-feature-settings: "lnum" 1; }
+.rental-terms h3 { margin: .2rem 0 .4rem; font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; line-height: 1.15; color: var(--wine); }
+.rental-terms p { font-size: .95rem; color: var(--muted); }
+
+/* --- Simulador --- */
+.sim-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(1.4rem, 3vw, 2.5rem); align-items: start; }
+.sim-panel { display: flex; flex-direction: column; gap: 1.9rem; padding: clamp(1.3rem, 3vw, 2.2rem); background: #fff; border: 1px solid rgba(74, 14, 28, .1); }
+.sim-step h3 { display: flex; align-items: center; gap: .8rem; margin-bottom: 1rem; font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; line-height: 1.1; color: var(--wine); }
+.num {
+  display: inline-flex; align-items: center; justify-content: center; flex: none; width: 28px; height: 28px; border: 1px solid var(--gold);
+  border-radius: 50%; font-family: var(--font-body); font-size: .72rem; font-weight: 500; line-height: 1; color: var(--gold-deep);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.sim-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(105px, 1fr)); gap: .9rem; margin-bottom: .9rem; }
+.sim-field { display: flex; flex-direction: column; gap: .3rem; min-width: 0; }
+.sim-field[hidden] { display: none; }
+.sim-field > span { font-size: .64rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--wine); }
+.sim-field input, .sim-field select {
+  width: 100%; padding: .62rem .7rem; font-size: 1rem; font-weight: 400; color: var(--ink); background: var(--ivory);
+  border: 1px solid rgba(74, 14, 28, .2); border-radius: 2px; outline: none; transition: border-color .3s, box-shadow .3s;
+}
+.sim-field input:focus, .sim-field select:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 3px rgba(198, 161, 91, .2); }
+.sim-hint { margin-top: .7rem; font-size: .85rem; color: var(--muted); }
+.sim-chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.sim-chips .chip { padding: .5rem .85rem; font-size: .64rem; }
+.sim-line { display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-size: .92rem; }
+
+.sim-list li { display: flex; align-items: center; gap: .8rem; padding: .65rem 0; border-bottom: 1px solid rgba(74, 14, 28, .08); }
+.sim-list li > div:nth-child(2) { flex: 1; min-width: 0; }
+.sim-list strong { display: block; font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; line-height: 1.2; color: var(--wine); }
+.sim-list small { font-size: .74rem; letter-spacing: .05em; color: var(--gold-deep); }
+.sim-list .dot { flex: none; width: 12px; height: 12px; border-radius: 50%; }
+.sim-list .mini { flex: none; width: 36px; height: 36px; color: var(--wine); }
+.sim-list .mini svg { width: 100%; height: 100%; }
+.stepper { display: inline-flex; align-items: center; flex: none; border: 1px solid rgba(74, 14, 28, .25); }
+.stepper button { width: 34px; height: 34px; font-size: 1.15rem; line-height: 1; color: var(--wine); transition: background-color .3s, color .3s; }
+.stepper button:hover { background: var(--wine); color: var(--cream); }
+.stepper output { min-width: 44px; text-align: center; font-size: .95rem; font-weight: 500; }
+
+.sim-stage { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 1rem; padding: 1.2rem; background: #fff; border: 1px solid rgba(74, 14, 28, .1); }
+.sim-preview { display: flex; flex-direction: column; gap: .9rem; }
+.sim-result { display: flex; flex-direction: column; gap: 1rem; }
+.sim-tabs { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid rgba(74, 14, 28, .22); }
+.sim-tabs button { padding: .8rem .4rem; font-size: .7rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--wine); transition: background-color .4s var(--ease), color .4s var(--ease); }
+.sim-tabs button:hover { background: rgba(74, 14, 28, .05); }
+.sim-tabs button.is-active { background: var(--wine); color: var(--cream); }
+.sim-view { padding: .8rem; background: #F1E9DB; border-radius: 2px; animation: fieldIn .6s var(--ease) both; }
+.sim-view[hidden] { display: none; }
+.sim-tables { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 1rem; }
+.sim-table svg { display: block; width: 100%; height: auto; max-height: 40vh; margin-inline: auto; }
+.sim-table figcaption { margin-top: .3rem; text-align: center; font-size: .8rem; color: var(--muted); }
+
+/* Partes del dibujo */
+.s-table { fill: #FBF8F3; stroke: var(--gold); stroke-width: 1.6; }
+.s-plate { stroke: rgba(142, 107, 43, .55); stroke-width: .5; }
+.s-p1 { fill: #fff; } .s-p2 { fill: #FAF4EA; } .s-p3 { fill: #F2E8D8; }
+.s-handle { fill: var(--gold); }
+.s-piece { stroke: rgba(0, 0, 0, .2); stroke-width: .3; }
+.s-slot { fill: none; stroke: rgba(142, 107, 43, .4); stroke-width: .35; stroke-dasharray: 1 1; }
+.s-dim { stroke: var(--gold-deep); stroke-width: .8; }
+.s-dimtxt { fill: var(--gold-deep); font-family: var(--font-body); }
+.s-stand { transition: opacity .3s; }
+
+.r-floor { fill: #FBF8F3; }
+.r-grid { stroke: rgba(74, 14, 28, .1); stroke-width: 1; }
+.r-wall { fill: none; stroke: var(--wine); stroke-width: 5; }
+.r-clear { fill: rgba(198, 161, 91, .08); stroke: rgba(142, 107, 43, .5); stroke-width: 1.5; stroke-dasharray: 6 6; }
+.r-item { cursor: grab; touch-action: none; outline: none; }
+.r-item:active { cursor: grabbing; }
+.r-item.is-sel .r-clear { fill: rgba(198, 161, 91, .2); stroke: var(--gold-deep); stroke-dasharray: none; }
+.r-item:focus-visible .r-clear { stroke: var(--wine); stroke-dasharray: none; }
+.r-label { fill: var(--wine); font-family: var(--font-body); font-weight: 500; pointer-events: none; }
+.sim-room-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 1rem; margin-bottom: .6rem; }
+.sim-room-bar p { font-size: .85rem; color: var(--muted); }
+.sim-room-bar > div { display: flex; gap: .5rem; }
+.sim-room-bar .chip { padding: .5rem .9rem; font-size: .64rem; }
+.sim-room-bar .chip:disabled { opacity: .4; cursor: not-allowed; }
+#simRoomSvg svg { display: block; width: 100%; height: auto; max-height: 52vh; margin-inline: auto; }
+.sim-issues, .sim-msgs { display: grid; gap: .45rem; }
+.sim-issues { margin-top: .7rem; }
+.sim-issues li, .sim-msgs li { padding: .5rem .8rem; font-size: .86rem; line-height: 1.45; background: #fff; border-left: 3px solid var(--gold); }
+.sim-issues li.ok, .sim-msgs li.ok { border-color: #5E7D4C; }
+.sim-issues li.warn, .sim-msgs li.warn { border-color: var(--error); }
+.sim-msgs button { font-weight: 500; color: var(--wine); text-decoration: underline; text-underline-offset: 3px; }
+
+.sim-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; text-align: center; padding: .8rem 0; border-block: 1px solid rgba(74, 14, 28, .1); }
+.sim-stats dt { font-size: .62rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-deep); }
+.sim-stats dd { margin: 0; font-family: var(--font-display); font-size: 2rem; font-weight: 600; line-height: 1.1; color: var(--wine); font-variant-numeric: lining-nums; }
+.sim-note { font-size: .78rem; line-height: 1.5; color: var(--muted); }
+
+@media (max-width: 1100px) {
+  .stands-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rental-terms { grid-template-columns: 1fr; gap: 1.6rem; max-width: 560px; }
+}
+@media (max-width: 960px) {
+  .sim-grid { grid-template-columns: 1fr; }
+  .sim-stage { display: contents; }
+  .sim-preview { order: -1; position: sticky; top: 64px; z-index: 6; padding: .7rem; background: #fff; border: 1px solid rgba(74, 14, 28, .12); box-shadow: 0 16px 30px -22px rgba(42, 7, 16, .6); }
+  .sim-result { padding: 1.2rem; background: #fff; border: 1px solid rgba(74, 14, 28, .1); }
+  .sim-table svg, #simRoomSvg svg { max-height: 34vh; }
+  .sim-view { padding: .5rem; }
+  .sim-tabs button { padding: .6rem .3rem; }
+}
+@media (max-width: 680px) {
+  .stands-grid { grid-template-columns: 1fr; }
+  .stand .card-media { aspect-ratio: 4 / 3; }
+}

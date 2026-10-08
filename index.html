@@ -67,6 +67,7 @@
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#propuesta">Propuesta</a></li>
           <li><a href="#productos">Productos</a></li>
+          <li><a href="#alquiler">Alquiler</a></li>
           <li><a href="#eventos">Eventos</a></li>
           <li><a href="#galeria">Galería</a></li>
           <li><a href="#contacto">Contacto</a></li>
@@ -102,7 +103,7 @@
             <span class="sr-only">Vibrans Gourmet. </span>Pasabocas gourmet &amp; catering para <em>momentos especiales.</em>
           </h1>
           <p class="hero-lead reveal" style="--d:.24s">
-            Diseñamos experiencias gastronómicas a la medida de tu evento: sabores cuidadosamente elaborados, presentaciones impecables y atención personalizada de principio a fin.
+            Pasabocas gourmet con sabores cuidadosamente elaborados y mesas en alquiler para lucirlos. Te asesoramos para elegir lo ideal para tu evento.
           </p>
           <div class="hero-actions reveal" style="--d:.36s">
             <a class="btn btn-primary" href="#propuesta">Ver nuestra propuesta</a>
@@ -189,7 +190,7 @@
             </li>
             <li class="reveal" style="--d:.26s">
               <span class="pillar-n">03</span>
-              <div><h3>Presentación impecable</h3><p>Un montaje elegante que acompaña toda la experiencia.</p></div>
+              <div><h3>Presentación impecable</h3><p>Cada pasabocas está cuidado al detalle y listo para lucir en tu mesa.</p></div>
             </li>
           </ul>
 
@@ -245,6 +246,135 @@
         </div>
         <div class="chips reveal" id="productFilters" role="tablist" aria-label="Filtrar productos por categoría"><!-- script.js --></div>
         <div class="products-grid" id="productsGrid"><!-- se genera desde script.js (PRODUCTS) --></div>
+      </div>
+    </section>
+
+    <!-- ========== ALQUILER: TORRES Y BANDEJAS ========== -->
+    <section class="section section-ivory" id="alquiler" aria-labelledby="rentTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Alquiler</p>
+          <h2 class="display" id="rentTitle">Torres y bandejas para <em>lucir</em> tus pasabocas</h2>
+          <p class="lead reveal" style="--d:.16s">Además de los pasabocas, alquilamos las torres y bandejas donde se exhiben. El alquiler incluye un depósito para cubrir posibles daños.</p>
+        </div>
+
+        <div class="stands-grid" id="standsGrid"><!-- se genera desde script.js (STANDS) --></div>
+
+        <ul class="rental-terms">
+          <li class="reveal">
+            <span class="rt-n">01</span>
+            <h3>Alquiler por evento</h3>
+            <p>Reservas las torres y bandejas para la fecha de tu evento.</p>
+          </li>
+          <li class="reveal" style="--d:.1s">
+            <span class="rt-n">02</span>
+            <h3>Depósito por daños</h3>
+            <p>Dejas un depósito que cubre posibles daños a las piezas. El valor se confirma en tu cotización.</p>
+          </li>
+          <li class="reveal" style="--d:.2s">
+            <span class="rt-n">03</span>
+            <h3>Sin servicio de meseros</h3>
+            <p>Nos enfocamos en los pasabocas y en el alquiler: el servicio durante el evento no está incluido.</p>
+          </li>
+        </ul>
+
+        <div class="center-cta reveal">
+          <a class="btn btn-wine" href="#simulador">Probar el simulador de mesa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SIMULADOR DE MESA ========== -->
+    <section class="section section-cream sim" id="simulador" aria-labelledby="simTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow reveal">Simulador</p>
+          <h2 class="display" id="simTitle">Visualiza tu mesa <em>antes</em> de tu evento</h2>
+          <p class="lead reveal" style="--d:.16s">Dinos cuántos invitados esperas, elige tus pasabocas y las torres que quieres alquilar, y mira cómo se acomodan en tu mesa y en tu espacio.</p>
+        </div>
+
+        <div class="sim-grid">
+          <!-- Controles -->
+          <div class="sim-panel">
+            <section class="sim-step">
+              <h3><span class="num">1</span>Tu evento</h3>
+              <div class="sim-row">
+                <label class="sim-field"><span>Invitados</span><input id="simGuests" type="number" min="1" max="1000" inputmode="numeric" value="50"></label>
+                <label class="sim-field"><span>Pasabocas por persona</span><input id="simPerGuest" type="number" min="1" max="20" inputmode="numeric" value="6"></label>
+              </div>
+              <button type="button" class="btn btn-wine btn-sm btn-block" id="simAuto">Calcular por mí</button>
+              <p class="sim-hint" id="simNeed"></p>
+            </section>
+
+            <section class="sim-step">
+              <h3><span class="num">2</span>Tus pasabocas</h3>
+              <ul class="sim-list" id="simProducts"></ul>
+            </section>
+
+            <section class="sim-step">
+              <h3><span class="num">3</span>Torres y bandejas</h3>
+              <ul class="sim-list" id="simStands"></ul>
+            </section>
+
+            <section class="sim-step">
+              <h3><span class="num">4</span>Tu mesa</h3>
+              <div class="sim-chips" id="simTablePresets" role="group" aria-label="Medidas rápidas de mesa"></div>
+              <div class="sim-row">
+                <label class="sim-field"><span>Forma</span>
+                  <select id="simShape"><option value="rect">Rectangular</option><option value="round">Redonda</option></select>
+                </label>
+                <label class="sim-field" id="simWField"><span id="simWLabel">Largo (cm)</span><input id="simTW" type="number" min="40" max="500" inputmode="numeric" value="180"></label>
+                <label class="sim-field" id="simDField"><span>Ancho (cm)</span><input id="simTD" type="number" min="40" max="300" inputmode="numeric" value="75"></label>
+              </div>
+              <div class="sim-line"><span>Cantidad de mesas</span>
+                <div class="stepper" role="group" aria-label="Cantidad de mesas">
+                  <button type="button" data-tables="-1" aria-label="Menos mesas">−</button>
+                  <output id="simTableQty">1</output>
+                  <button type="button" data-tables="1" aria-label="Más mesas">+</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="sim-step">
+              <h3><span class="num">5</span>Tu espacio</h3>
+              <div class="sim-row">
+                <label class="sim-field"><span>Ancho (m)</span><input id="simRoomW" type="number" min="1" max="40" step="0.5" inputmode="decimal" value="6"></label>
+                <label class="sim-field"><span>Largo (m)</span><input id="simRoomL" type="number" min="1" max="40" step="0.5" inputmode="decimal" value="5"></label>
+              </div>
+            </section>
+          </div>
+
+          <!-- Escenario -->
+          <div class="sim-stage">
+            <div class="sim-preview">
+            <div class="sim-tabs" role="tablist" aria-label="Vista del simulador">
+              <button type="button" class="is-active" role="tab" aria-selected="true" data-view="mesa">Sobre la mesa</button>
+              <button type="button" role="tab" aria-selected="false" data-view="espacio">En mi espacio</button>
+            </div>
+
+            <div class="sim-view" id="simMesaView"></div>
+
+            <div class="sim-view" id="simRoomView" hidden>
+              <div class="sim-room-bar">
+                <p>Arrastra las mesas para acomodarlas.</p>
+                <div>
+                  <button type="button" class="chip" id="simRotate">Rotar mesa</button>
+                  <button type="button" class="chip" id="simReset">Reordenar</button>
+                </div>
+              </div>
+              <div id="simRoomSvg"></div>
+              <ul class="sim-issues" id="simIssues"></ul>
+            </div>
+
+            </div>
+
+            <div class="sim-result">
+            <div class="sim-summary" id="simSummary" aria-live="polite"></div>
+            <button type="button" class="btn btn-primary btn-block" id="simQuote">Cotizar esta configuración</button>
+            <p class="sim-note">Simulación a escala y orientativa: las medidas de las piezas pueden variar ligeramente. Confirmamos todo en tu cotización.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -383,7 +513,7 @@
           </figure>
           <figure class="testi reveal" style="--d:.1s">
             <svg class="quote-mark" aria-hidden="true"><use href="#ico-quote"/></svg>
-            <blockquote>Cumplieron con tiempos, montaje y sabor. Nuestro evento empresarial se vio profesional y elegante, y la atención fue cercana desde la primera conversación.</blockquote>
+            <blockquote>Cumplieron con tiempos, presentación y sabor. Nuestro evento empresarial se vio profesional y elegante, y la atención fue cercana desde la primera conversación.</blockquote>
             <figcaption><strong>Andrés Felipe G.</strong><span>Evento empresarial</span></figcaption>
           </figure>
           <figure class="testi reveal" style="--d:.2s">
@@ -430,6 +560,7 @@
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#propuesta">Propuesta</a></li>
           <li><a href="#productos">Productos</a></li>
+          <li><a href="#alquiler">Alquiler</a></li>
           <li><a href="#eventos">Eventos</a></li>
           <li><a href="#galeria">Galería</a></li>
         </ul>
