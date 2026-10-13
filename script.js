@@ -55,7 +55,7 @@ const EXPERIENCE = [
   { name: 'Volcán exótico',     img: 'assets/volcan-exotico.jpg',    pos: 'center 52%', alt: 'Buñuelo relleno decorado con flores comestibles' },
   { name: 'Antojo de mi tierra', img: 'assets/antojo-de-mi-tierra.jpg', pos: 'center 62%', alt: 'Arepa de queso con guacamole y pancita de cerdo caramelizada' },
   { name: 'Vibranburguesa',     img: 'assets/vibranburguesa.jpg',    pos: 'center 62%', alt: 'Mini hamburguesa con queso doble crema' },
-  { name: 'Sinfonía',           img: 'assets/sinfonia.jpg',          pos: 'center 55%', alt: 'Queso de asar a las finas hierbas con uchuva fresca' }
+  { name: 'Oreo y Limón',       img: 'assets/oreo-y-limon.jpg',      pos: 'center 62%', alt: 'Dos vasitos de postre: galleta Oreo y crema de limón' }
 ];
 
 // Catálogo (carta). Fotos en assets/, nombradas igual que el producto; textos tomados de "Descripcion de Productos.docx".
@@ -67,8 +67,11 @@ const PRODUCTS = [
   { name: 'Volcán exótico',        category: 'Pasabocas',       desc: 'Un buñuelo dorado que esconde un dip sedoso de sour cream, pimentones caramelizados y tocino ahumado. Sorprende desde el primer bocado.', img: 'assets/volcan-exotico.jpg', pos: 'center 52%', alt: 'Volcán exótico: buñuelo relleno con sour cream, pimentones y tocino, decorado con flores comestibles' },
   { name: 'Sinfonía',              category: 'Canapés',         desc: 'Queso de asar a las finas hierbas, dorado en su punto, con mermelada de uchuva y una uchuva fresca. Dulce, salado y delicadamente ácido.', img: 'assets/sinfonia.jpg', pos: 'center 55%', alt: 'Sinfonía: queso de asar a las finas hierbas con uchuva fresca' },
   { name: 'Tomatina serrano',      category: 'Canapés',         desc: 'Pan de masa madre con pesto y queso crema, vestido con jamón serrano, tomates cherry y rúcula fresca, y un glaseado de reducción de vino tinto.', img: 'assets/tomatina-serrano.jpg', pos: 'center 62%', alt: 'Tomatina serrano: tostada de masa madre con pesto, jamón serrano, tomate cherry y rúcula' },
+  { name: 'Boca di tuna',          category: 'Canapés',         desc: 'Un cremoso dip de atún con queso crema trufado, servido sobre una tostada de aceite de oliva y finas hierbas. Fresco, suave y con un aroma que invita a repetir.', img: 'assets/boca-di-tuna.jpg', pos: 'center 60%', alt: 'Boca di tuna: dip de atún con queso crema trufado sobre tostada, adornado con pepino' },
   { name: 'Vibranburguesa',        category: 'Mini sándwiches', desc: 'Mini hamburguesa de 50 g, jugosa, con tocino caramelizado, queso doble crema derretido, vegetales frescos al gusto y nuestras salsas especiales de la casa.', img: 'assets/vibranburguesa.jpg', pos: 'center 62%', alt: 'Vibranburguesa: mini hamburguesa con queso doble crema y lechuga' },
-  { name: 'Italianísimo tropical', category: 'Mini sándwiches', desc: 'Mini sándwich de pepperoni y salami con queso crema trufado y un toque de mermelada de piña que lo hace inolvidable. Vegetales frescos al gusto.', img: 'assets/italianisimo-tropical.jpg', pos: 'center 58%', alt: 'Italianísimo tropical: mini sándwich de pepperoni y salami en croissant' }
+  { name: 'Italianísimo tropical', category: 'Mini sándwiches', desc: 'Mini sándwich de pepperoni y salami con queso crema trufado y un toque de mermelada de piña que lo hace inolvidable. Vegetales frescos al gusto.', img: 'assets/italianisimo-tropical.jpg', pos: 'center 58%', alt: 'Italianísimo tropical: mini sándwich de pepperoni y salami en croissant' },
+  { name: 'Oreo y Limón',          category: 'Caprichos dulces', desc: 'Un dúo de vasitos para antojarse: galleta Oreo en capas con crema suave y chantilly, y una cremosa de limón con ralladura fresca que despierta el paladar.', img: 'assets/oreo-y-limon.jpg', pos: 'center 62%', alt: 'Oreo y Limón: dos vasitos de postre, uno de galleta Oreo y otro de crema de limón' },
+  { name: 'Maracuyá y frutos rojos', category: 'Caprichos dulces', desc: 'Otro dúo para elegir con el corazón: la acidez tropical de la maracuyá y la dulzura de los frutos rojos, en capas suaves de crema y chantilly.', img: 'assets/maracuya-y-frutos-rojos.jpg', pos: 'center 50%', alt: 'Maracuyá y frutos rojos: dos vasitos de postre con chantilly, frutos rojos y maracuyá' }
 ];
 
 // Tipos de evento. `single` es el texto que se usa en el mensaje de WhatsApp ("será una boda…").
@@ -91,7 +94,7 @@ const GALLERY = [
   { img: 'assets/tostada-jamon.webp',    pos: 'center',     alt: 'Detalle de tostada con jamón serrano' },
   { img: 'assets/tostada-pan.webp',      pos: 'center',     alt: 'Pan artesanal de la tostada gourmet' },
   { img: 'assets/volcan-exotico.jpg',    pos: 'center 52%', alt: 'Buñuelo con flores comestibles' },
-  { img: 'assets/patacon-base.webp',     pos: 'center 40%', alt: 'Canasta de patacón sobre tabla de bambú' }
+  { img: 'assets/maracuya-y-frutos-rojos.jpg', pos: 'center 50%', alt: 'Vasitos de postre de maracuyá y de frutos rojos' }
 ];
 
 /* Ilustraciones de línea (viewBox 48×48) para tarjetas sin foto */
@@ -725,7 +728,7 @@ const TABLE_PRESETS = [
   { label: 'Redonda Ø 90',         shape: 'round', w: 90,  d: 90 }
 ];
 
-const SIM_COLORS = ['#C6A15B', '#B5656F', '#8A8F5B', '#B8734A', '#6E3A5A', '#9A8C78', '#5F7A6B', '#A8553A'];
+const SIM_COLORS = ['#C6A15B', '#B5656F', '#8A8F5B', '#B8734A', '#6E3A5A', '#9A8C78', '#5F7A6B', '#A8553A', '#7C8FA6', '#D08A9A', '#C9B037'];
 const PIECE_STEP = 6;                       // los pasabocas suben/bajan de media docena en media docena
 
 const standDims = (s) => s.shape === 'round' ? `Ø ${s.diameter} cm` : `${s.w} × ${s.d} cm`;
