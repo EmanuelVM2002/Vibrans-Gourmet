@@ -5,7 +5,7 @@ El usuario habla español; responde y escribe los textos de la página en españ
 
 ## Qué es
 Landing page de **Vibrans Gourmet**, un emprendimiento de **pasabocas gourmet** para eventos que además **alquila torres y bandejas** (soportes de postres) con un **depósito para cubrir posibles daños**.
-**Sí hay servicio a domicilio** (llevan los pasabocas y las piezas alquiladas al evento) y, si el cliente lo necesita, **pueden ir al lugar a organizar la mesa** (confirmado 13/10/2026; el costo no está definido, se coordina en la cotización). **No está confirmado servicio de meseros** ni atención durante el evento: no escribir textos que lo sugieran.
+**Sí hay servicio a domicilio** (llevan los pasabocas y las piezas alquiladas al evento) y, si el cliente lo necesita, **pueden ir al lugar a organizar la mesa** (confirmado 13/10/2026; **sujeto a validación de la distancia de viaje**; el costo no está definido, se coordina en la cotización). **No incluye servicio de meseros** (confirmado): no escribir textos que lo sugieran.
 Objetivo de la página: convertir visitantes en clientes (cotización por WhatsApp), no solo mostrar información.
 
 - Stack: HTML + CSS + JS puro, sin build. Se abre `index.html` directamente.

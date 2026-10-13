@@ -41,7 +41,7 @@ const FORM_ENDPOINT     = '';
 const SERVICES = [
   { title: 'Pasabocas gourmet',   text: 'Bocados de autor, pensados para acompañar la conversación y sorprender al primer gusto.', img: 'assets/antojo-de-mi-tierra.jpg', pos: 'center 62%', alt: 'Arepa de queso con guacamole y pancita de cerdo caramelizada' },
   { title: 'Catering para eventos', text: 'Propuestas gastronómicas personalizadas para bodas, eventos corporativos, cumpleaños, celebraciones y otros eventos.', img: 'assets/italianisimo-tropical.jpg', pos: 'center 58%', alt: 'Mini sándwich de pepperoni y salami en croissant' },
-  { title: 'Alquiler de torres y bandejas', text: 'Torres de 2 y 3 pisos y bandejas para exhibir tus pasabocas. Las llevamos a tu evento, con un depósito que cubre posibles daños.', icon: 'torre3' },
+  { title: 'Alquiler de torres y bandejas', text: 'Torres de 2 y 3 pisos y bandejas para exhibir tus pasabocas. Las llevamos a tu evento según la distancia, con un depósito que cubre posibles daños.', icon: 'torre3' },
   { title: 'Eventos corporativos', text: 'Lanzamientos, reuniones y celebraciones de empresa con una presentación impecable.', icon: 'maletin' },
   { title: 'Celebraciones especiales', text: 'Bodas, cumpleaños y grados con un menú que cuenta tu historia.', img: 'assets/volcan-exotico.jpg', pos: 'center 52%', alt: 'Buñuelo relleno decorado con flores comestibles' },
   { title: 'Eventos privados', text: 'Encuentros íntimos con atención cercana y una propuesta hecha solo para ti.', icon: 'copa' }
