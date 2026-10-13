@@ -21,7 +21,7 @@ const WHATSAPP_DISPLAY  = '+57 305 317 2716';           // cómo se muestra en e
 
 const INSTAGRAM_URL     = 'https://www.instagram.com/vibransgourmet';
 const INSTAGRAM_HANDLE  = '@vibransgourmet';
-const EMAIL             = 'hola@vibransgourmet.com';
+const EMAIL             = 'vibransstudio@gmail.com';
 const CITY              = 'Colombia';
 
 // Enlace de la marca de agua "Diseñado por Sonetix" (pie de página). Si está vacío, se muestra sin enlace.
@@ -39,33 +39,36 @@ const FORM_ENDPOINT     = '';
    --------------------------------------------------------------------- */
 
 const SERVICES = [
-  { title: 'Pasabocas gourmet',   text: 'Bocados de autor, pensados para acompañar la conversación y sorprender al primer gusto.', img: 'assets/patacon.webp', pos: 'center 55%', alt: 'Patacón con carne desmechada y crema de cilantro' },
-  { title: 'Catering para eventos', text: 'Propuestas gastronómicas personalizadas para bodas, eventos corporativos, cumpleaños, celebraciones y otros eventos.', img: 'assets/tostada.webp', pos: 'center 62%', alt: 'Tostada de pan artesanal con jamón serrano y rúcula' },
+  { title: 'Pasabocas gourmet',   text: 'Bocados de autor, pensados para acompañar la conversación y sorprender al primer gusto.', img: 'assets/antojo-de-mi-tierra.jpg', pos: 'center 62%', alt: 'Arepa de queso con guacamole y pancita de cerdo caramelizada' },
+  { title: 'Catering para eventos', text: 'Propuestas gastronómicas personalizadas para bodas, eventos corporativos, cumpleaños, celebraciones y otros eventos.', img: 'assets/italianisimo-tropical.jpg', pos: 'center 58%', alt: 'Mini sándwich de pepperoni y salami en croissant' },
   { title: 'Alquiler de torres y bandejas', text: 'Torres de 2 y 3 pisos y bandejas para exhibir tus pasabocas, en alquiler con un depósito que cubre posibles daños.', icon: 'torre3' },
   { title: 'Eventos corporativos', text: 'Lanzamientos, reuniones y celebraciones de empresa con una presentación impecable.', icon: 'maletin' },
-  { title: 'Celebraciones especiales', text: 'Bodas, cumpleaños y grados con un menú que cuenta tu historia.', img: 'assets/tostada-tomates.webp', pos: 'center', alt: 'Detalle de tomates cherry glaseados sobre una tostada gourmet' },
+  { title: 'Celebraciones especiales', text: 'Bodas, cumpleaños y grados con un menú que cuenta tu historia.', img: 'assets/volcan-exotico.jpg', pos: 'center 52%', alt: 'Buñuelo relleno decorado con flores comestibles' },
   { title: 'Eventos privados', text: 'Encuentros íntimos con atención cercana y una propuesta hecha solo para ti.', icon: 'copa' }
 ];
 
 // Galería "Experiencia gourmet" (7 piezas: las clases t1…t7 definen la composición en style.css)
 const EXPERIENCE = [
-  { name: 'Patacón de carne desmechada', img: 'assets/patacon.webp',          pos: 'center 55%', alt: 'Patacón relleno de carne desmechada con crema de cilantro' },
-  { name: 'Tostada de jamón serrano',    img: 'assets/tostada-tomates.webp',  pos: 'center',     alt: 'Tostada con tomate cherry glaseado y rúcula' },
-  { name: 'Mini postres',                icon: 'postre' },
-  { name: 'Canapés artesanales',         img: 'assets/tostada.webp',          pos: 'center 62%', alt: 'Canapé sobre pan artesanal con jamón serrano' },
-  { name: 'Crema de cilantro',           img: 'assets/patacon-cilantro.webp', pos: 'center',     alt: 'Detalle de la crema de cilantro sobre el patacón' },
-  { name: 'Tablas gourmet',              icon: 'tabla' },
-  { name: 'Pan artesanal',               img: 'assets/tostada-pan.webp',      pos: 'center',     alt: 'Pan artesanal con queso crema y pesto' }
+  { name: 'Tropi canasta',      img: 'assets/tropi-canasta.jpg',     pos: 'center 58%', alt: 'Canasta de plátano rellena de posta cartagenera con salsa de cilantro' },
+  { name: 'Tomatina serrano',   img: 'assets/tomatina-serrano.jpg',  pos: 'center 62%', alt: 'Tostada de masa madre con jamón serrano, tomate cherry y rúcula' },
+  { name: 'Chicken Cone',       img: 'assets/chicken-cone.jpg',      pos: 'center 58%', alt: 'Conos crocantes de maíz rellenos de pollo, crema y maicitos' },
+  { name: 'Volcán exótico',     img: 'assets/volcan-exotico.jpg',    pos: 'center 52%', alt: 'Buñuelo relleno decorado con flores comestibles' },
+  { name: 'Antojo de mi tierra', img: 'assets/antojo-de-mi-tierra.jpg', pos: 'center 62%', alt: 'Arepa de queso con guacamole y pancita de cerdo caramelizada' },
+  { name: 'Vibranburguesa',     img: 'assets/vibranburguesa.jpg',    pos: 'center 62%', alt: 'Mini hamburguesa con queso doble crema' },
+  { name: 'Sinfonía',           img: 'assets/sinfonia.jpg',          pos: 'center 55%', alt: 'Queso de asar a las finas hierbas con uchuva fresca' }
 ];
 
-// Catálogo. Los dos primeros usan fotos reales; el resto son EJEMPLOS para reemplazar por tus productos.
+// Catálogo (carta). Fotos en assets/, nombradas igual que el producto; textos tomados de "Descripcion de Productos.docx".
+// Las categorías (para el filtro) las asignamos nosotros: el documento no las trae.
 const PRODUCTS = [
-  { name: 'Patacón de carne desmechada', category: 'Pasabocas', desc: 'Canasta crujiente de patacón con carne desmechada, toque dulce caramelizado y crema de cilantro.', img: 'assets/patacon.webp', pos: 'center 55%', alt: 'Patacón de carne desmechada' },
-  { name: 'Tostada de jamón serrano',    category: 'Canapés',   desc: 'Pan artesanal con queso crema, pesto, jamón serrano, rúcula y tomate cherry glaseado.', img: 'assets/tostada.webp', pos: 'center 62%', alt: 'Tostada de jamón serrano' },
-  { name: 'Mini cheesecake de frutos rojos', category: 'Mini postres', desc: 'Porción individual cremosa, con base crocante y coulis de frutos rojos.', icon: 'postre' },
-  { name: 'Tabla de quesos y charcutería', category: 'Tablas', desc: 'Selección de quesos, embutidos, frutos secos y frutas, montada para compartir.', icon: 'tabla' },
-  { name: 'Brocheta caprese', category: 'Pasabocas', desc: 'Tomate cherry, mozzarella fresca y albahaca con reducción de balsámico.', icon: 'canape' },
-  { name: 'Tartaleta de chocolate', category: 'Mini postres', desc: 'Masa mantecosa rellena de ganache de chocolate oscuro y sal en escamas.', icon: 'postre' }
+  { name: 'Antojo de mi tierra',   category: 'Pasabocas',       desc: 'Arepa de queso dorada, coronada con nuestro guacamole de la casa y pancita de cerdo caramelizada. El sabor de casa, en un solo bocado.', img: 'assets/antojo-de-mi-tierra.jpg', pos: 'center 62%', alt: 'Antojo de mi tierra: arepa de queso con guacamole y pancita de cerdo caramelizada' },
+  { name: 'Chicken Cone',          category: 'Pasabocas',       desc: 'Un cono de maíz crocante que guarda un cremoso dip de pollo a las finas hierbas, con maicitos dulces y un toque fresco de cilantro.', img: 'assets/chicken-cone.jpg', pos: 'center 58%', alt: 'Chicken Cone: conos crocantes de maíz rellenos de pollo, crema y maicitos' },
+  { name: 'Tropi canasta',         category: 'Pasabocas',       desc: 'Canasta de plátano dorada y crujiente, rellena de posta cartagenera y piña calada, con una suave salsa de cilantro que lo une todo.', img: 'assets/tropi-canasta.jpg', pos: 'center 60%', alt: 'Tropi canasta: canasta de plátano con posta cartagenera, piña y salsa de cilantro' },
+  { name: 'Volcán exótico',        category: 'Pasabocas',       desc: 'Un buñuelo dorado que esconde un dip sedoso de sour cream, pimentones caramelizados y tocino ahumado. Sorprende desde el primer bocado.', img: 'assets/volcan-exotico.jpg', pos: 'center 52%', alt: 'Volcán exótico: buñuelo relleno con sour cream, pimentones y tocino, decorado con flores comestibles' },
+  { name: 'Sinfonía',              category: 'Canapés',         desc: 'Queso de asar a las finas hierbas, dorado en su punto, con mermelada de uchuva y una uchuva fresca. Dulce, salado y delicadamente ácido.', img: 'assets/sinfonia.jpg', pos: 'center 55%', alt: 'Sinfonía: queso de asar a las finas hierbas con uchuva fresca' },
+  { name: 'Tomatina serrano',      category: 'Canapés',         desc: 'Pan de masa madre con pesto y queso crema, vestido con jamón serrano, tomates cherry y rúcula fresca, y un glaseado de reducción de vino tinto.', img: 'assets/tomatina-serrano.jpg', pos: 'center 62%', alt: 'Tomatina serrano: tostada de masa madre con pesto, jamón serrano, tomate cherry y rúcula' },
+  { name: 'Vibranburguesa',        category: 'Mini sándwiches', desc: 'Mini hamburguesa de 50 g, jugosa, con tocino caramelizado, queso doble crema derretido, vegetales frescos al gusto y nuestras salsas especiales de la casa.', img: 'assets/vibranburguesa.jpg', pos: 'center 62%', alt: 'Vibranburguesa: mini hamburguesa con queso doble crema y lechuga' },
+  { name: 'Italianísimo tropical', category: 'Mini sándwiches', desc: 'Mini sándwich de pepperoni y salami con queso crema trufado y un toque de mermelada de piña que lo hace inolvidable. Vegetales frescos al gusto.', img: 'assets/italianisimo-tropical.jpg', pos: 'center 58%', alt: 'Italianísimo tropical: mini sándwich de pepperoni y salami en croissant' }
 ];
 
 // Tipos de evento. `single` es el texto que se usa en el mensaje de WhatsApp ("será una boda…").
@@ -84,10 +87,10 @@ const SERVICE_TYPES = ['Pasabocas gourmet', 'Catering para eventos', 'Alquiler d
 // Galería / Instagram (reemplaza por tus fotos o conecta un feed más adelante)
 const GALLERY = [
   { img: 'assets/patacon-cilantro.webp', pos: 'center',     alt: 'Detalle de patacón con carne desmechada' },
-  { icon: 'hoja' },
+  { img: 'assets/italianisimo-tropical.jpg', pos: 'center 58%', alt: 'Mini sándwich de pepperoni y salami en croissant' },
   { img: 'assets/tostada-jamon.webp',    pos: 'center',     alt: 'Detalle de tostada con jamón serrano' },
   { img: 'assets/tostada-pan.webp',      pos: 'center',     alt: 'Pan artesanal de la tostada gourmet' },
-  { icon: 'copa' },
+  { img: 'assets/volcan-exotico.jpg',    pos: 'center 52%', alt: 'Buñuelo con flores comestibles' },
   { img: 'assets/patacon-base.webp',     pos: 'center 40%', alt: 'Canasta de patacón sobre tabla de bambú' }
 ];
 
@@ -722,7 +725,7 @@ const TABLE_PRESETS = [
   { label: 'Redonda Ø 90',         shape: 'round', w: 90,  d: 90 }
 ];
 
-const SIM_COLORS = ['#C6A15B', '#B5656F', '#8A8F5B', '#B8734A', '#6E3A5A', '#9A8C78'];
+const SIM_COLORS = ['#C6A15B', '#B5656F', '#8A8F5B', '#B8734A', '#6E3A5A', '#9A8C78', '#5F7A6B', '#A8553A'];
 const PIECE_STEP = 6;                       // los pasabocas suben/bajan de media docena en media docena
 
 const standDims = (s) => s.shape === 'round' ? `Ø ${s.diameter} cm` : `${s.w} × ${s.d} cm`;
